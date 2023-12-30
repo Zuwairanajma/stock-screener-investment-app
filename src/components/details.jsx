@@ -1,4 +1,4 @@
-import React from 'react';
+//  import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import './styles/details.css';
@@ -49,8 +49,11 @@ const Detail = () => {
                   </div>
                 ) : <div>Data not loaded </div>
             }
-<nav className="detnav">
-        <NavLink to="/balanceSheet/:id" className="back"><AiOutlineArrowRight style={{ color: 'seashell' }} />View Company's Balance Sheet</NavLink>
+      <nav className="detnav">
+        <NavLink to="/balanceSheet/:id" className="back">
+          <AiOutlineArrowRight style={{ color: 'seashell' }} />
+          View Company&apos;s Balance Sheet
+        </NavLink>
       </nav>
     </div>
   );

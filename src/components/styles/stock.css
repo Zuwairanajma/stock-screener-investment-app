@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  padding: 0; 
+  padding: 0;
   box-sizing: border-box;
   font-size: 20px;
   text-decoration: none;
@@ -40,6 +40,13 @@
   height: 6vh;
   margin-bottom: 1rem;
   border-radius: 10px;
+}
+
+.Error-message {
+  color: antiquewhite;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .header {

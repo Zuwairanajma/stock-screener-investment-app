@@ -10,7 +10,7 @@ const initialState = {
 
 export const fetchStocks = createAsyncThunk('stocks/fetchStocks', async () => {
   try {
-const response = await fetch ('http://localhost:3000/api/v1/stocks')
+    const response = await fetch('http://localhost:3000/api/v1/stocks');
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }

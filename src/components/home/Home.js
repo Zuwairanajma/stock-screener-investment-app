@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function Home() {
   return (
-    <section className='flex flex-col items-center justify-center min-h-screen'>
+    <section className="flex flex-col items-center justify-center min-h-screen">
       <h1 className="text-4xl font-bold mb-4">Our Courses</h1>
       <h3 className="mb-8 text-2xl">Select a course you&apos;d like to enroll</h3>
       <div className="grid gap-10 px-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
@@ -20,8 +20,8 @@ function Home() {
               If a dog chews shoes whose shoes does he choose?
             </p>
             <div className="card-actions">
-            <Link to={`/details/1`}>
-              <button  className="btn btn-primary bg-[#97bf0f] p-2 text-white">Enroll Now</button>
+              <Link to="/details/1">
+                <button className="btn btn-primary bg-[#97bf0f] p-2 text-white">Enroll Now</button>
               </Link>
             </div>
           </div>
@@ -40,8 +40,8 @@ function Home() {
               If a dog chews shoes whose shoes does he choose?
             </p>
             <div className="card-actions">
-            <Link to={`/details/2`}>
-              <button className="btn btn-primary bg-[#97bf0f] p-2 text-white">Enroll Now</button>
+              <Link to="/details/2">
+                <button className="btn btn-primary bg-[#97bf0f] p-2 text-white">Enroll Now</button>
               </Link>
             </div>
           </div>
@@ -60,15 +60,15 @@ function Home() {
               If a dog chews shoes whose shoes does he choose?
             </p>
             <div className="card-actions">
-            <Link to={`/details/3`}>
-              <button className="btn btn-primary bg-[#97bf0f] p-2 text-white">Enroll Now</button>
+              <Link to="/details/3">
+                <button className="btn btn-primary bg-[#97bf0f] p-2 text-white">Enroll Now</button>
               </Link>
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default Home
+export default Home;

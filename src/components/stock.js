@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import './styles/stock.css';
 import { NavLink } from 'react-router-dom';
@@ -36,7 +36,7 @@ const Stock = () => {
       </nav>
       <div className="header">
         <p>$$$</p>
-       </div>
+      </div>
       <ul className="companyList">
         {
           stocks.map((stock) => (

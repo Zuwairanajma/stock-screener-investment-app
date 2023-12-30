@@ -8,16 +8,15 @@ const initialState = {
 
 export const fetchBalanceSheets = createAsyncThunk(
   'balanceSheets/fetchBalanceSheets',
-  async (_, thunkAPI) => {
+  async () => {
     try {
       const companySymbols = ['AAPL', 'GOOGL', 'MSFT', 'BDX', 'NOC'];
 
       const balanceSheetsData = await Promise.all(
         companySymbols.map(async (symbol) => {
           const response = await fetch(
-            `https://financialmodelingprep.com/api/v3/balance-sheet-statement/${symbol}?period=annual&apikey=cb47745d26d092ee7f64001566830876`
+            `'http://localhost:3000/api/v1/balancesheet`,
           );
-
           if (!response.ok) {
             throw new Error(`Network response was not ok for ${symbol}`);
           }
@@ -37,14 +36,14 @@ export const fetchBalanceSheets = createAsyncThunk(
               marketsecuritiesnoncurrent: balanceSheet.marketablesecuritiesnoncurrent,
             })),
           };
-        })
+        }),
       );
 
       return balanceSheetsData;
     } catch (error) {
       throw new Error('An error occurred while fetching the data');
     }
-  }
+  },
 );
 
 export const balanceSheetSlice = createSlice({
