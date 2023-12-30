@@ -1,0 +1,51 @@
+.home {
+  position: relative;
+  padding-top: 6%;
+  padding-left: 8%;
+  width: 90%;
+  color: white;
+  margin: 0;
+}
+
+.welcome {
+  background: linear-gradient(rgba(0, 0, 0, 0.5),  #4369b2), url('https://images.unsplash.com/photo-1493723843671-1d655e66ac1c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fHR1dG9yaW5nfGVufDB8fDB8fHww');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  text-align: center;
+}
+h1 {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  width: 100%;
+  margin-top: -50px;
+}
+
+.home p {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.home-paragraph {
+  width: 80%;
+  margin: auto;
+}
+
+.home-image {
+  width: 100%;
+  height: 15vh;
+  background-image: url('../Assets/coinmarketcap.png');
+  background-size: cover;
+}
+
+
+.btn-primary {
+  align-items: center;
+  height: 8vh;
+  width: 14vw;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
